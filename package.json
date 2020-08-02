@@ -13,7 +13,8 @@
     "package-neu": "npm run build && node ./scripts/package-neu.js",
     "ui-windows": "npm run package-neu && cd dist && ./neutralino-win.exe",
     "ui-mac": "npm run package-neu && cd dist && ./neutralino-mac",
-    "ui-linux": "npm run package-neu && cd dist && ./neutralino-linux"
+    "ui-linux": "npm run package-neu && cd dist && ./neutralino-linux",
+    "lint": "eslint --ext .ts,.tsx,.js ./src"
   },
   "author": "Greg Lara",
   "license": "MIT",
@@ -22,6 +23,7 @@
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "adm-zip": "^0.4.16",
+    "eslint-config-airbnb-typescript": "^9.0.0",
     "got": "^11.5.1",
     "react-scripts": "^3.4.1",
     "shelljs": "^0.8.4",

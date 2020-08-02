@@ -1,0 +1,11 @@
+{
+	"extends": [
+		"airbnb-typescript"
+	],
+	"rules": {
+		"indent": ["error", "tab"],
+		"@typescript-eslint/indent": ["error", "tab"],
+		"react/jsx-indent": ["error", "tab"],
+		"no-tabs": ["error", { "allowIndentationTabs": true }]
+	}
+}

@@ -4,14 +4,14 @@ import './index.css';
 import App from './components/App';
 
 Neutralino.init({
-	load: function() {},
-	pingSuccessCallback: function() {},
-	pingFailCallback: function() {}
+	load: () => {},
+	pingSuccessCallback: () => {},
+	pingFailCallback: () => {},
 });
 
 ReactDOM.render(
 	<React.StrictMode>
 		<App />
 	</React.StrictMode>,
-	document.getElementById('root')
+	document.getElementById('root'),
 );
