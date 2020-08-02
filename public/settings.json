@@ -1,0 +1,16 @@
+{
+    "appname": "stts-poc",
+    "appport": "0",
+    "mode": "window",
+    "url": "/",
+    "window": {
+        "title": "Star Trek Timelines Spreadsheet",
+        "width": "1000",
+        "height": "700",
+        "fullscreen": false,
+        "alwaysontop": false,
+        "iconfile": "logo.png",
+        "enableinspector": false,
+        "borderlesswindow": false
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "stts-poc",
+  "version": "0.1.0",
+  "description": "NeutralinoJS template project utilizing React with TypeScript",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "get-server": "node ./scripts/download-server.js",
+    "postinstall": "npm run get-server",
+    "package-neu": "npm run build && node ./scripts/package-neu.js",
+    "ui-windows": "npm run package-neu && cd dist && ./neutralino-win.exe",
+    "ui-mac": "npm run package-neu && cd dist && ./neutralino-mac",
+    "ui-linux": "npm run package-neu && cd dist && ./neutralino-linux"
+  },
+  "author": "Greg Lara",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "adm-zip": "^0.4.16",
+    "got": "^11.5.1",
+    "react-scripts": "^3.4.1",
+    "shelljs": "^0.8.4",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
