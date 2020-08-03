@@ -28,8 +28,14 @@ const packageRelease = () => {
 	shell.cp('-r', path.join(BUILD_DIRECTORY, 'assets', '*'), ASSETS_DIRECTORY);
 	shell.cp('-r', path.join(BUILD_DIRECTORY, 'static', '*'), ASSETS_DIRECTORY);
 
-	// fix paths in index.html (/static/ to /assets/)
+	// fix paths in build output (/static/ to /assets/)
 	shell.sed('-i', /\/static\//g, '/assets/', path.join(APP_DIRECTORY, 'index.html'));
+	shell.ls(path.join(APP_DIRECTORY, 'assets', 'css', '*.css')).forEach(function (file) {
+		shell.sed('-i', /\/static\//g, '/assets/', file);
+	});
+	shell.ls(path.join(APP_DIRECTORY, 'assets', 'js', '*.js')).forEach(function (file) {
+		shell.sed('-i', /\/static\//g, '/assets/', file);
+	});
 };
 
 packageRelease();

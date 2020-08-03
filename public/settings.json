@@ -5,8 +5,8 @@
     "url": "/",
     "window": {
         "title": "Star Trek Timelines Spreadsheet",
-        "width": "1000",
-        "height": "700",
+        "width": "1280",
+        "height": "720",
         "fullscreen": false,
         "alwaysontop": false,
         "iconfile": "logo.png",
