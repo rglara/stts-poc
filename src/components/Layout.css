@@ -1,0 +1,19 @@
+.layout .header {
+	height: 8rem;
+	background-color: lime;
+	display: grid;
+	grid-template-columns: 5rem 1fr;
+}
+.layout .header .mainmenu {
+	background-color: aqua;
+}
+.layout .content {
+	display: grid;
+	grid-template-columns: 5rem 1fr;
+	overflow: auto;
+	height: calc(100vh - 8rem);
+	background-color: purple;
+}
+.layout .content .contentmenu {
+	background-color: tomato;
+}

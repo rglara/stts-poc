@@ -1,5 +1,10 @@
 import React from 'react';
 
+import Header from './layout/Header';
+import Content from './layout/Content';
+
+import './Layout.css';
+
 function App() {
 	if (typeof Neutralino === 'undefined') {
 		return (
@@ -7,14 +12,9 @@ function App() {
 		);
 	}
 	return (
-		<div>
-			<h3>
-				{`${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}`}
-				<br />
-				<br />
-				<span>{`v ${NL_VERSION}`}</span>
-			</h3>
-			<h4 className="lcars-font">Hello Okuda!</h4>
+		<div className="layout">
+			<Header />
+			<Content />
 		</div>
 	);
 }
