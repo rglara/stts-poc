@@ -10,6 +10,11 @@
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
 
+<% if (process.env.NODE_ENV === 'production') { %>
 		<script src="/neutralino.js"></script>
+<% } else { %>
+		<script src="./assets/local-env.js"></script>
+		<script src="./assets/neutralino.js"></script>
+<% } %>
 	</body>
 </html>
