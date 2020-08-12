@@ -5,7 +5,7 @@ import Content from './layout/Content';
 
 import './Layout.css';
 
-function App() {
+const App = () => {
 	if (typeof Neutralino === 'undefined') {
 		return (
 			<h2>Unable to find Neutralino library!!</h2>
@@ -17,6 +17,6 @@ function App() {
 			<Content />
 		</div>
 	);
-}
+};
 
 export default App;

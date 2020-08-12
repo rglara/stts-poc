@@ -6,7 +6,11 @@ body {
 	font-size: 1em;
 	text-align: center;
 }
-
+button {
+	font: inherit;
+	border: inherit;
+	padding: inherit;
+}
 @font-face {
 	font-family: 'Okuda';
 	src: url('./fonts/Okuda.ttf') format('truetype'),
@@ -16,7 +20,14 @@ body {
 	font-style: normal;
 }
 
-.lcars-font {
+.lcars {
 	font-family: "Okuda", Arial, Helvetica, sans-serif;
 	font-size: 1.75em;
+}
+.lcars button {
+	color: black;
+}
+.lcars button:hover {
+	opacity: 0.95;
+	cursor: pointer;
 }
