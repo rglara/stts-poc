@@ -1,5 +1,7 @@
 import React from 'react';
 
+import UserInfo from '../widgets/UserInfo';
+
 const Header = () => {
 	const handleMenuClick = (e: React.MouseEvent) => {
 		e.preventDefault();
@@ -18,7 +20,10 @@ const Header = () => {
 				<div className="spacer" />
 			</div>
 			<div className="info">
-				<div className="title">HEADER</div>
+				<div className="title">
+					<div className="lcars app-name">Crew Management Tool</div>
+					<UserInfo className="user-info" />
+				</div>
 				<div className="spacer" />
 			</div>
 		</div>

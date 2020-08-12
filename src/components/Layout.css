@@ -19,7 +19,7 @@
 }
 .layout .header .mainmenu .spacer {
 	background-color: #F93;
-	margin-top: 5px;
+	margin-top: 0.25rem;
 	border-bottom-left-radius: 3.75rem;
 	height: calc(4.5rem - 1.1em);
 	position: relative;
@@ -28,12 +28,43 @@
 	content: '';
 	width: 2rem;
 	display: block;
-	height: calc(4.5rem - 1.1em - 1.25rem);
+	height: calc(4.5rem - 1.1em - 1.5rem);
 	background-color: black;
 	position: absolute;
 	right: 0;
-	bottom: 1.25rem;
+	bottom: 1.5rem;
 	border-bottom-left-radius: 3.75rem;
+}
+.layout .header .app-name {
+	font-size: 2.5em;
+}
+.layout .header .info {
+	display: grid;
+	grid-template-rows: 1fr 1.5rem;
+}
+.layout .header .info .title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.layout .header .info .title .user-info {
+	margin-right: 1.75rem;
+}
+.layout .header .info .spacer {
+	background-color: #F93;
+	border-top-right-radius: 3.75rem;
+	border-bottom-right-radius: 3.75rem;
+	position: relative;
+}
+.layout .header .info .spacer:after {
+	content: '';
+	width: 0.25rem;
+	height: 1.5rem;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	right: 1.5rem;
 }
 .layout .content {
 	display: grid;

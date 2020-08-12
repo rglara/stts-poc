@@ -7,8 +7,9 @@ body {
 	text-align: center;
 }
 button {
-	font: inherit;
 	border: inherit;
+	font: inherit;
+	margin: inherit;
 	padding: inherit;
 }
 @font-face {
