@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import MainMenu from '../widgets/MainMenu';
 import UserInfo from '../widgets/UserInfo';
 
 const Header = () => {
+	const [showMenu, setShowMenu] = useState(false);
+
 	const handleMenuClick = (e: React.MouseEvent) => {
 		e.preventDefault();
-		// console.log('MENU CLICKED!');
+		setShowMenu(!showMenu);
 	};
+
 	return (
 		<div className="header">
+			<MainMenu show={showMenu} />
 			<div className="mainmenu lcars">
 				<button
 					className="menu-button"
 					onClick={handleMenuClick}
 					type="button"
 				>
-					MENU
+					{showMenu ? 'CLOSE' : 'MENU'}
 				</button>
 				<div className="spacer" />
 			</div>
