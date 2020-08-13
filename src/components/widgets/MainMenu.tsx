@@ -5,7 +5,7 @@ import styles from './MainMenu.module.css';
 const MainMenu = ({ show }: {
 	show: boolean;
 }) => (
-	<div className={styles.container} style={{visibility: show ? 'visible' : 'hidden'}}>
+	<div className={styles.container} style={{ visibility: show ? 'visible' : 'hidden' }}>
 		<div>PRIMARY MENU</div>
 		<div>
 			<div>Button #1</div>

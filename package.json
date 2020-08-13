@@ -4,10 +4,8 @@
   "description": "NeutralinoJS template project utilizing React with TypeScript",
   "main": "index.tsx",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "EXTEND_ESLINT=true react-scripts start",
+    "build": "EXTEND_ESLINT=true react-scripts build",
     "get-server": "node ./scripts/download-server.js",
     "postinstall": "npm run get-server",
     "package-neu": "npm run build && node ./scripts/package-neu.js",
