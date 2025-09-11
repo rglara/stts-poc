@@ -23,7 +23,7 @@
     "adm-zip": "^0.4.16",
     "eslint-config-airbnb-typescript": "^9.0.0",
     "got": "^11.5.1",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^5.0.1",
     "shelljs": "^0.8.4",
     "typescript": "^3.9.7"
   },
